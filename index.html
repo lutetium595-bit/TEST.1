@@ -20,13 +20,13 @@
 
 <section class="section" id="like"><h5>💗 LIKE</h5><div class="card"><div class="tags"><span>가족</span><span>각시의 사랑</span><span>비오는 날</span><span>눈오는 날</span><span>손끝에 스치는 바람</span></div></div></section>
 <section class="section" id="links"><h5>🔗 LINK</h5><div class="buttons">
-<a href="https://nosion.onrender.com/" target="_blank" rel="https://cdn-icons-png.flaticon.com/512/11779/11779880.png">공지</a>
+<a href="https://nosion.onrender.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/notice.png" class="link-icon" alt="공지">공지</a>
 <a href="https://weflab.com/user/lOPU2suYkmht" target="_blank" rel="noopener noreferrer"><img src="./assets/android-chrome-192x192.png" class="link-icon" alt="룰렛">룰렛</a>
-<a href="https://show-du4o.onrender.com/" target="_blank" rel="noopener noreferrer">이달의 의상</a>
-<a href="https://www.youtube.com/@GAK_SKY2" target="_blank" rel="noopener noreferrer"><img src="./assets/images(1)" class="link-icon" alt="유튜브">유튜브</a>
-<a href="https://gaksky-calendar.onrender.com/calendar/index.html" target="_blank" rel="noopener noreferrer"><img src="./assets/calendar.png" class="link-icon" alt="일정표">일정표</a>
+<a href="https://show-du4o.onrender.com/" target="_blank" rel="noopener noreferrer"><img src="./assets/costume.png" class="link-icon" alt="의상">이달의 의상</a>
+<a href="https://www.youtube.com/@GAK_SKY2" target="_blank" rel="noopener noreferrer"><img src="./assets/images(1)" class="link-icon" alt="유튭">유튜브</a>
+<a href="https://gaksky-calendar.onrender.com/calendar/index.html" target="_blank" rel="noopener noreferrer"><img src="./assets/calendar.png" class="link-icon" alt="일정">일정표</a>
 <a href="https://fancim.me/celeb/profile.aspx?cu_id=n_grklrYynz/VbMONfbPkLKA==" target="_blank" rel="noopener noreferrer"><img src="./assets/images" class="link-icon" alt="팬심">팬심</a>
 </div></section>
-<footer>© 2026 각하늘 - DAY</footer></main>
+<footer>© 2026 각하늘</footer></main>
 <script>const birthdayDday=document.getElementById('birthdayDday');function updateBirthdayDday(){const now=new Date();const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());let birthday=new Date(now.getFullYear(),1,4);if(today>birthday)birthday=new Date(now.getFullYear()+1,1,4);const days=Math.round((birthday-today)/86400000);birthdayDday.textContent=days===0?'D-DAY 🎂':`D-${days}`;}const firstBroadcastDays=document.getElementById('firstBroadcastDays');function updateFirstBroadcastDays(){const now=new Date();const today=new Date(now.getFullYear(),now.getMonth(),now.getDate());const firstDay=new Date(2022,9,10);const days=Math.floor((today-firstDay)/86400000);firstBroadcastDays.textContent=days<0?'0일째':`${days}일째`;}updateBirthdayDday();updateFirstBroadcastDays();setInterval(()=>{updateBirthdayDday();updateFirstBroadcastDays();},60*60*1000);const themeToggle=document.getElementById('themeToggle');function setTheme(theme){const dark=theme==='dark';document.body.classList.toggle('dark',dark);themeToggle.textContent=dark?'☀️':'🌙';themeToggle.setAttribute('aria-label',dark?'라이트모드로 전환':'다크모드로 전환');themeToggle.title=dark?'라이트모드 전환':'다크모드 전환';localStorage.setItem('gaksky-theme',theme);}const savedTheme=localStorage.getItem('gaksky-theme');if(savedTheme){setTheme(savedTheme);}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){setTheme('dark');}themeToggle.addEventListener('click',()=>setTheme(document.body.classList.contains('dark')?'light':'dark'));</script>
 </body></html>
